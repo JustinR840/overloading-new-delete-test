@@ -28,6 +28,7 @@ int main()
 
 	cout << words.length() << endl;
 	
+	/*
 	int i = 0;
 	while(words.length() > 10)
 	{
@@ -38,6 +39,7 @@ int main()
 		i++;
 		words.remove(words.at(0));
 	}
+	*/
 	
 	return 0;
 }

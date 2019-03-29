@@ -5,14 +5,14 @@
 
 void * operator new[](std::size_t n)
 {
-	std::cout << "array allocation of " << n << "bytes" << std::endl;
 	void * p = ::operator new(n);
+	std::cout << "array allocation of " << n << "bytes at address " << p << std::endl;
 	return p;
 }
 
 
 void operator delete[](void * p) throw()
 {
-	std::cout << "freeing array" << std::endl;
+	std::cout << "freeing array at address " << p << std::endl;
 	::operator delete(p);
 }
